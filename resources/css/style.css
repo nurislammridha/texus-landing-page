@@ -318,9 +318,16 @@ color: #3C3C3C;
 }
 
 /* ========================
+Map Section
+============================*/
+.map img{
+    height: 428px;
+}
+/* ========================
 Footer Section
 ============================*/
 .footer{
+    margin-top: -6px;
     position: relative;
     background-color: #D4F0D4;
     padding: 80px 0px 36px 0px;
