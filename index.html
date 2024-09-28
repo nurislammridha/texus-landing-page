@@ -22,40 +22,7 @@
         </header>
     </section> -->
 
-    <!--HEADER-->
-    <!-- <header>
-        <section class="slider">
-            <ul>
-                <li>
-                    <article class="center-y padding_2x">
-                        <h3 class="big title"><em>O</em>ccupational <em>H</em>ealth</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                        <a href="#about" class="btn btn_3">More about us</a>
-                    </article>
-                </li>
-                <li>
-                    <article class="center-y padding_2x">
-                        <h3 class="big title"><em>Fire Fighting</em> Spill Response.</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="#" class="btn btn_3">View Issues</a>
-                    </article>
-                </li>
-                <li>
-                    <article class="center-y padding_2x">
-                        <h3 class="big title"><em>Fire Fighting</em> Spill Response.</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="#" class="btn btn_3">View Issues</a>
-                    </article>
-                </li>
-                <aside>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                </aside>
-            </ul>
-        </section>
-        <a href="#services" class="cs-down"></a>
-    </header> -->
+
 
     <div class="container-max">
         <div class="header">
@@ -100,6 +67,88 @@
                 </div>
             </div>
 
+        </div>
+
+        <!--HEADER-->
+        <div class="hero">
+            <header>
+                <section class="slider">
+                    <ul>
+                        <li> </li>
+                        <li></li>
+                        <li> </li>
+                        <aside>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </aside>
+                    </ul>
+                </section>
+                <a href="#services" class="cs-down"></a>
+            </header>
+            <div class="mid-card fade-in">
+                <div class="second-item">
+                    <h1>Darbo laikas</h1>
+                    <p class="border"></p>
+                    <div class="time-table">
+                        <div class="item">
+                            <p>Pirmadienis</p>
+                            <p>8.00–17.00</p>
+                        </div>
+                        <div class="item">
+                            <p>Ketvirtadienis</p>
+                            <p>8.00–17.00</p>
+                        </div>
+                        <div class="item">
+                            <p>Antradienis</p>
+                            <p>8.00–17.00</p>
+                        </div>
+                        <div class="item">
+                            <p>Penktadienis</p>
+                            <p>8.00–17.00</p>
+                        </div>
+                        <div class="item">
+                            <p>Trečiadienis</p>
+                            <p>8.00–17.00</p>
+                        </div>
+                        <div class="item">
+                            <p>Pietų pertrauka</p>
+                            <p>8.00–17.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="hero-card">
+            <div class="container">
+                <div class="items slide-right">
+                    <div class="item">
+                        <img src="./resources/images/icons/family.png" alt="">
+                        <p>Paslaugos vaikams ir šeimai</p>
+                    </div>
+                    <div class="item">
+                        <img src="./resources/images/icons/help.png" alt="">
+                        <p>Paslaugos senjorams ir asmenims su negalia</p>
+                    </div>
+                    <div class="item">
+                        <img src="./resources/images/icons/group.png" alt="">
+                        <p>Globos centro paslaugos</p>
+                    </div>
+                    <div class="item">
+                        <img src="./resources/images/icons/hotel.png" alt="">
+                        <p>Nakvynės namų paslaugos</p>
+                    </div>
+                    <div class="item">
+                        <img src="./resources/images/icons/car.png" alt="">
+                        <p>Transporto paslaugos</p>
+                    </div>
+                    <div class="item">
+                        <img src="./resources/images/icons/hand.png" alt="">
+                        <p>Kitos paslaugos</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="description">
             <div class="container">
@@ -273,7 +322,7 @@
             })
         })
     </script> -->
-    <!-- <script>
+    <script>
         {
             class SliderClip {
                 constructor(el) {
@@ -307,7 +356,7 @@
                         });
                     });
 
-                    this.el.addEventListener('mouseenter', () => self.autoPlay = false);
+                    this.el.addEventListener('mouseenter', () => self.autoPlay = true);
                     this.el.addEventListener('mouseleave', () => self.autoPlay = true);
 
                     setInterval(function () {
@@ -337,8 +386,9 @@
 
 
             const slider = new SliderClip(document.querySelector('.slider'));
+            const slider2 = new SliderClip(document.querySelector('.hero-card'));
         }
-    </script> -->
+    </script>
 </body>
 
 </html>
