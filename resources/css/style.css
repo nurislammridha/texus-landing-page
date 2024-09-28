@@ -21,6 +21,8 @@ body {
   font-family: "DM Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
 }
 
   h1,
@@ -147,6 +149,18 @@ Header Section
 .header-bottom .navs .bottom ul li a{
     font-size: 18px;
 }
+.scroll-header{
+  width: 100%;
+  position: fixed; 
+  top: -38px;
+  z-index: 999999;
+  background: #FFF;
+}
+.scroll-header .logo{
+    width: 60px;
+    height: 67px;
+    padding-top: 34px;
+}
 /* ========================
 Hero Section
 ============================*/
@@ -263,7 +277,7 @@ Gallery Section
 .gallery{
     display: flex;
     justify-content: space-between;
-    padding: 102px 0px;
+    padding:200px 0 102px 0px;
 }
 .gallery .left{
     width: 525px;
@@ -298,6 +312,9 @@ color: #3C3C3C;
 }
 .gallery .right{
     position: relative;
+    /* padding-top: 200px; */
+    /* background: url('../images/basemap.png'); */
+    /* background: red; */
 }
 .gallery .right .img{
     width: 421px;
@@ -316,7 +333,25 @@ color: #3C3C3C;
     right: 0;
     transform: translateY(-50%);
 }
-
+.gallery-parent{
+    position: relative;
+}
+.gallery-parent .rainbow-right{
+    position: absolute;
+    top:0px;
+    right: 0;
+    width: 489px;
+    height: 581px;
+    z-index: -10;
+}
+.gallery-parent .rainbow-left{
+    position: absolute;
+    top:0px;
+    left: 0;
+    width: 194px;
+    height: 391px;
+    z-index: -10;
+}
 /* ========================
 Map Section
 ============================*/
@@ -470,7 +505,7 @@ color: #808287;
 ****************************/
 
 
-header a{
+.my-header a{
     text-decoration:none !important;
     min-width: fit-content;
     width: fit-content;
@@ -478,19 +513,19 @@ header a{
     width: -moz-fit-content;
 }
 
-header .slider {
+.my-header .slider {
     position: relative;
     width: 100%;
     height: 500px;
 }
 
-header ul{
+.my-header ul{
     padding:0;
     margin:0;
 }
 
 
-header .slider li {
+.my-header .slider li {
     position: absolute;
     top: 0;
     left: 0;
@@ -505,46 +540,46 @@ header .slider li {
     border-top-right-radius: 100px;
 }
 
-header .slider li:nth-child(1){
+.my-header .slider li:nth-child(1){
     background:linear-gradient(to right, rgba(1,1,1,0.6) 10%, rgba(1,1,1,0.2) 51%, rgba(1,1,1,0.01) 100%), url("../images/slide.png");
     background-size: cover;
     background-position:top left;
 }
 
 
-header .slider li:nth-child(2){
+.my-header .slider li:nth-child(2){
     background:linear-gradient(to right, rgba(1,1,1,.7) 10%, rgba(1,1,1,0.3) 51%, rgba(1,1,1,0.01) 100%), url("../images/slide2.jpg");
     background-size: cover;
     background-position:top left;
 }
 
-header .slider li:nth-child(3){
+.my-header .slider li:nth-child(3){
     background:linear-gradient(to right, rgba(1,1,1,.7) 10%, rgba(1,1,1,0.3) 51%, rgba(1,1,1,0.01) 100%), url("../images/slide3.jpg");
     background-size: cover;
     background-position:top left;
 }
 
-header .slider li:before{
+.my-header .slider li:before{
     transition: 0.5s;
     top:-250px !important;
 }
 
-header li.current:before{
+.my-header li.current:before{
     transition-delay: 1s;
     transform: rotate(-90deg);
     top:-20px !important;
 }
 
-header li.current {
+.my-header li.current {
     z-index: 1;
     clip: rect(0, 100vw, 100vh, 0);
 }
 
-header li.prev {
+.my-header li.prev {
     clip: rect(0, 0, 100vh, 0);
 }
 
-header .slider aside {
+.my-header .slider aside {
     position: absolute;
     bottom: 2rem;
     left: 2rem;
@@ -552,7 +587,7 @@ header .slider aside {
     z-index: 10;
 }
 
-header .slider aside a {
+.my-header .slider aside a {
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -563,31 +598,31 @@ header .slider aside a {
     transition: transform .3s;
 }
 
-header a.current_dot {
+.my-header a.current_dot {
     transform: scale(1.4);
     background:var(--primary) !important;
 }
 
 @media screen and (max-width: 920px) {
-      header{
+    .my-header{
         height:70vh;
         position:relative;
     }
     
-    header .slider{
+    .my-header .slider{
         height:70vh;
     }
     
     
-    header .slider li:nth-child(2){
+    .my-header .slider li:nth-child(2){
         background-position:top center;
     }
     
-    header .slider li:nth-child(3){
+    .my-header .slider li:nth-child(3){
         background-position:top center;
     }
     
-    header li.current:before{
+    .my-header li.current:before{
         top:-30px;
         right:-10px;
     }
@@ -697,10 +732,10 @@ header a.current_dot {
 .hero-card .items{
     margin-top: -84px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     z-index: 9999;
     position: absolute;
-    width: 97%;
+    /* width: 97%; */
 }
 .hero-card .items .item{
     width: 178px;
@@ -710,6 +745,7 @@ header a.current_dot {
     border-bottom-left-radius: 15px;
     background-color: #FFF;
     z-index: 9999;
+    margin-right: 30px;
 }
 .hero-card .items .item img{
     width: 37px;

@@ -15,15 +15,6 @@
 </head>
 
 <body>
-    <!-- <section class="cd">
-        <header>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum pariatur nemo hic recusandae in aperiam
-            molestias odio autem sapiente voluptate.
-        </header>
-    </section> -->
-
-
-
     <div class="container-max">
         <div class="header">
             <div class="header-top">
@@ -35,43 +26,45 @@
                     </ul>
                 </div>
             </div>
-            <div class="container">
-                <div class="header-bottom">
-                    <div class="logo">
-                        <img src="./resources/images/logo-weight.png" />
-                    </div>
-                    <div class="navs">
-                        <div class="top">
-                            <ul>
-                                <li><a>DUK</a></li>
-                                <li><a>Karjera</a></li>
-                                <li><a>Nuorodos</a></li>
-                                <li>
-                                    <img class="search" src="./resources/images/icons/search.png" />
-                                    <img src="./resources/images/icons/praise.png" />
-                                    <img src="./resources/images/icons/sitemap.png" />
-                                    <img src="./resources/images/icons/lan.png" />
-                                </li>
-                            </ul>
+            <header>
+                <div class="container">
+                    <div class="header-bottom">
+                        <div class="logo">
+                            <img src="./resources/images/logo-weight.png" />
                         </div>
-                        <div class="bottom">
-                            <ul>
-                                <li><a>Naujienos</a></li>
-                                <li><a>Veikla</a></li>
-                                <li><a>Struktūra ir kontaktai</a></li>
-                                <li><a>Administracinė informacija</a></li>
-                                <li><a>Korupcijos prevencija</a></li>
-                            </ul>
+                        <div class="navs">
+                            <div class="top">
+                                <ul>
+                                    <li><a>DUK</a></li>
+                                    <li><a>Karjera</a></li>
+                                    <li><a>Nuorodos</a></li>
+                                    <li>
+                                        <img class="search" src="./resources/images/icons/search.png" />
+                                        <img src="./resources/images/icons/praise.png" />
+                                        <img src="./resources/images/icons/sitemap.png" />
+                                        <img src="./resources/images/icons/lan.png" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bottom">
+                                <ul>
+                                    <li><a>Naujienos</a></li>
+                                    <li><a>Veikla</a></li>
+                                    <li><a>Struktūra ir kontaktai</a></li>
+                                    <li><a>Administracinė informacija</a></li>
+                                    <li><a>Korupcijos prevencija</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </header>
 
         </div>
 
         <!--HEADER-->
         <div class="hero">
-            <header>
+            <div class="my-header">
                 <section class="slider">
                     <ul>
                         <li> </li>
@@ -85,7 +78,7 @@
                     </ul>
                 </section>
                 <a href="#services" class="cs-down"></a>
-            </header>
+            </div>
             <div class="mid-card fade-in">
                 <div class="second-item">
                     <h1>Darbo laikas</h1>
@@ -207,22 +200,28 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="gallery">
-                <div class="left">
-                    <div class="txt">APIE MUS</div>
-                    <p>
-                        Mes siekiame sukurti įstaigą, kuri sugebėtų tenkinti visuomenės socialinius poreikius. <br />
-                        <b>Bendradarbiavimas, dalyvavimas, kompleksiškumas, prieinamumas, socialinis teisingumas ir
-                            solidarumas, tinkamumas, visapusiškumas </b> - tai mūsų darbo principai.
-                    </p>
-                    <a href="#">PLAČIAU</a>
-                </div>
-                <div class="right">
-                    <div class="img"> <img src="./resources/images/gallery1.jpg" alt=""></div>
-                    <img class="child" src="./resources/images/gallerry2.png" alt="">
+        <div class="gallery-parent">
+            <div class="container">
+                <div class="gallery">
+                    <div class="left">
+                        <div class="txt">APIE MUS</div>
+                        <p>
+                            Mes siekiame sukurti įstaigą, kuri sugebėtų tenkinti visuomenės socialinius poreikius.
+                            <br />
+                            <b>Bendradarbiavimas, dalyvavimas, kompleksiškumas, prieinamumas, socialinis teisingumas ir
+                                solidarumas, tinkamumas, visapusiškumas </b> - tai mūsų darbo principai.
+                        </p>
+                        <a href="#">PLAČIAU</a>
+                    </div>
+                    <div class="right">
+                        <div class="img"> <img src="./resources/images/gallery1.jpg" alt=""></div>
+                        <img class="child" src="./resources/images/gallerry2.png" alt="">
+
+                    </div>
                 </div>
             </div>
+            <img src="./resources/images/ranibow.png" alt="" class="rainbow-right">
+            <img src="./resources/images/rainbow1.png" alt="" class="rainbow-left">
         </div>
         <div class="map">
             <img src="./resources/images/basemap.png" />
@@ -311,17 +310,17 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- <script>
+    <script>
         $(document).ready(function () {
             $(window).on('scroll', function () {
                 if ($(window).scrollTop()) {
-                    $("header").addClass('ts')
+                    $("header").addClass('scroll-header')
                 } else {
-                    $("header").removeClass('ts')
+                    $("header").removeClass('scroll-header')
                 }
             })
         })
-    </script> -->
+    </script>
     <script>
         {
             class SliderClip {

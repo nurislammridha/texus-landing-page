@@ -138,12 +138,23 @@ Para Section
 .para p b{
   font-weight: 500;
 }
-
+.para-parent{
+  position: relative;
+}
+.para-rain{
+  position: absolute;
+  top: -334px;
+  right: 0;
+  width: 335px;
+  height: 626px;
+  z-index: 22;
+}
 /* ========================
 togle showing
 ============================*/
 .showing{
   padding: 100px 0px;
+  position: relative;
 }
 .showing h1{
   font-weight: 200;
@@ -200,6 +211,15 @@ togle showing
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+.showing-rainbow{
+  position: absolute;
+  top: 103px;
+  left: 0;
+  width: 243px;
+  height: 429px;
+  z-index: -10;
 }
 /* ========================
 Profile section
@@ -286,6 +306,17 @@ Link showing
   height: 50px;
   margin-right: 29px;
  
+}
+.link-parent{
+  position: relative;
+}
+.link-rainbow{
+  position: absolute;
+    right: 0;
+    top: -148px;
+    width: 502px;
+    height: 697px;
+    z-index: -1;
 }
 /* ========================
 clients section
