@@ -41,6 +41,10 @@ Description Section
   -webkit-box-shadow: 0px 3px 6px 2px rgba(0,0,0,0.19);
 -moz-box-shadow: 0px 3px 6px 2px rgba(0,0,0,0.19);
 box-shadow: 0px 3px 6px 2px rgba(0,0,0,0.19);
+transition:.3s ease;
+}
+.descrip > .left:hover{
+  transform: scale(1.02) translateY(-0.3rem);
 }
 .descrip > .left .parrent > li{
   margin-top: 24px;
@@ -119,6 +123,10 @@ font-weight: 500;
 .descrip .right .right-img img{
   width: 421px;
   height: 504px;
+  transition:.3s ease;
+}
+.descrip .right .right-img img:hover{
+  transform: scale(1.02) translateY(-0.3rem);
 }
 /* ========================
 Para Section
@@ -238,6 +246,10 @@ Profile section
 }
 .profile .item{
 width: 389px;
+transition:.3s ease;
+}
+.profile .item:hover{
+  transform: scale(1.02) translateY(-0.3rem);
 }
 .profile .item img{
 width: 100%;
@@ -336,6 +348,10 @@ clients section
 }
 .clients .item{
   width: 389px;
+  transition:.3s ease;
+}
+.clients .item:hover{
+  transform: scale(1.02) translateY(-0.3rem);
 }
 .clients .item img{
  width: 100%;

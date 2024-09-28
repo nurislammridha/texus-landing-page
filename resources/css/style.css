@@ -101,10 +101,15 @@ Header Section
 .header-bottom .logo{
     width: 97px;
     height: 93.44px;
+    cursor: pointer;
 }
 .header-bottom .logo img{
     width: 100%;
     height: 100%;
+    transition: all 1s ease;
+}
+.header-bottom .logo:hover img{
+    transform:scale(1.2);  
 }
 .header-bottom .navs{
     display: flex;
@@ -122,6 +127,10 @@ Header Section
 .header-bottom .navs .top ul li{
    cursor: pointer;
    margin-right: 18px;
+   transition:.3s ease;
+}
+.header-bottom .navs .top ul li:hover {
+    /* transform: scale(1.02) translateY(-0.3rem); */
 }
 .header-bottom .navs .top ul li a{
     font-size: 16px;
@@ -145,6 +154,10 @@ Header Section
 .header-bottom .navs .bottom ul li{
     margin-left: 41px;
     cursor: pointer;
+    transition:.3s ease;
+}
+.header-bottom .navs .bottom ul li:hover{
+    transform: scale(1.02) translateY(-0.3rem);
 }
 .header-bottom .navs .bottom ul li a{
     font-size: 18px;
@@ -194,6 +207,29 @@ Description Section
     border-radius: 60px;
     background-color:#3468C0;
     color: #fff;
+    transition:.5s ease;
+    margin-left: 2px;
+}
+.description .my-btn:hover{
+    transform: scale(1.02) translateY(-0.3rem);
+background-color: #fff;
+border: 1px solid #3468C0;
+color: #3468C0;
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    
+    30%, 50%, 70% {
+      transform: translate3d(-2px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(2px, 0, 0);
+  }
 }
 /* ========================
 News Section
@@ -233,6 +269,10 @@ News Section
 }
 .newses .news .item{
 width: 388px;
+transition:.3s ease;
+}
+.newses .news .item:hover{
+    transform: scale(1.02) translateY(-0.3rem);
 }
 .newses .news .item img{
     width: 100%;
@@ -309,6 +349,15 @@ color: #3C3C3C;
     letter-spacing: 0.1em;
     color: #FFF;
     background-color: #3468C0;
+    transition:.3s ease;
+    margin-left: 2px;
+}
+.gallery .left a:hover{
+
+    transform: scale(1.02) translateY(-0.3rem);
+    background-color: #FFF;
+    border: 1px solid #3468C0;
+    color: #3468C0;
 }
 .gallery .right{
     position: relative;
@@ -324,6 +373,10 @@ color: #3C3C3C;
 .gallery .right .img img{
     width: 100%;
     height: 100%;
+    transition:.3s ease;
+}
+.gallery .right .img img:hover{
+    transform: scale(1.02) translateY(-0.3rem);
 }
 .gallery .right .child{
     width: 246px;
@@ -332,6 +385,10 @@ color: #3C3C3C;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+    transition:.3s ease;
+}
+.gallery .right .child:hover{
+    transform: scale(1.02) translateY(-52%);
 }
 .gallery-parent{
     position: relative;
@@ -646,6 +703,10 @@ color: #808287;
     animation-duration: 4s;
     opacity: 1;
     transition-timing-function: ease-in; */
+    transition:.3s ease;
+}
+.hero .mid-card:hover{
+    transform: scale(1.02) translateY(-51%); 
 }
 @keyframes example {
     0%   {opacity: 0;left: 0;}
@@ -746,6 +807,10 @@ color: #808287;
     background-color: #FFF;
     z-index: 9999;
     margin-right: 30px;
+    transition:.3s ease;
+}
+.hero-card .items .item:hover{
+    transform: scale(1.02) translateY(-0.3rem);
 }
 .hero-card .items .item img{
     width: 37px;

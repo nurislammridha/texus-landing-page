@@ -86,6 +86,8 @@ Employe profiles with their addresses
 
 ### 02) CSS3: I use modern css (flex box, grid and animations) for styling.
 
+### 03) CSS3 Animation: I use modern css3 animation and hover effect.
+
 ### 03) Javascript: For smooth scrolling(when navigation) and auto slide for hero caurosel.
 
 # Some basic module I design for better user experience
@@ -100,4 +102,4 @@ Employe profiles with their addresses
 
 ### 05) Accessibility: I follow basic accessibility guidelines (alt text for images and proper form labels)
 
-### 05) Instruction: I follow instruction of https://panrbiblioteka.lt/
+### 05) Instructions: I follow instructions from https://panrbiblioteka.lt/
