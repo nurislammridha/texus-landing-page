@@ -50,7 +50,7 @@ box-shadow: 0px 3px 6px 2px rgba(0,0,0,0.19);
 }
 .descrip > .left .parrent > li  a{
   font-weight: 400;
-  size: 18px;
+  font-size: 18px;
 }
 .descrip > .left .parrent > li:first-child{
  border-bottom: 2px solid #3468C0;
@@ -74,7 +74,7 @@ font-size: 16px;
 }
 .descrip .right > p{
  width: 300;
- tab-size: 16px;
+ font-size: 16px;
  line-height: 24px;
  color: #3C3C3C;
 }
@@ -373,3 +373,287 @@ margin-top: 75px;
   font-weight: 400;
   font-size: 18px;
 }
+
+
+
+@media (max-width: 990px) {
+  .banner .txt h1 {
+    font-weight: 250;
+    font-size: 35px;
+  }
+  .banner img {
+    height: 208px;
+    border-top-right-radius: 30px;
+  }
+  .descrip {
+    padding: 31px 0 30px 0
+  }
+  .descrip > .left {
+    width: 27%;
+    height: fit-content;
+    margin-left: 3px;
+    padding: 6px 12px;
+    border-radius: 17px;
+  }
+  .descrip .right {
+    width: 67%;
+}
+.descrip .right > p{
+  font-size: 14px;
+}
+.descrip .right .img-list {
+  margin-top: 4px;}
+  .descrip .right .img-list .left-list p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3C3C3C;
+    margin-bottom: 5px;
+  }
+.descrip .right .img-list .left-list h6 {
+      font-weight: 400;
+      font-size: 18px;
+    }
+.descrip .right .img-list .left-list ul li {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 18px;
+        color: #3C3C3C;
+        margin-bottom: 0px;
+      }
+ .descrip .right .right-img img {
+          width: 421px;
+          height: 439px;
+      }
+  .para-rain {
+        position: absolute;
+        top: -222px;
+        right: 0;
+        width: 224px;
+        height: 521px;
+      }
+      .para h6 {
+        font-weight: 400;
+        font-size: 20px;
+      }
+      .para p {
+        margin-top: 8px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 20px;
+      }
+      .showing {
+        padding: 33px 0px;
+      }
+      .showing h1 {
+        font-weight: 200;
+        font-size: 30px;
+        color: #141515;
+        margin-bottom: 0px;
+      }
+      .showing .accordion {
+        padding: 17px;
+    }   
+    .showing .accordion-toggle h2 {
+      font-weight: 400;
+      font-size: 18px;
+    } 
+    .profile h2 {
+      font-weight: 250px;
+      font-size: 27px;
+    }
+    .profile .item {
+      width: 32%;
+  }
+  .profile .item .title {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #141515;
+    height: 38px;}
+.profile {
+      padding-bottom: 89px;
+    }
+.link-rainbow {
+        position: absolute;
+        right: 0;
+        top: -75px;
+        width: 347px;
+        height: 540px;
+    }
+    .link h2 {
+      font-weight: 250;
+      font-size: 27px;
+    }
+    .link .situ {
+      margin-left: 4px;
+      margin-right: 4px;
+      margin-top: 22px;
+      margin-bottom: 6px;
+    display: block;
+    }
+    .link .situ .item {
+      height: 118px;
+      display: flex;
+      align-items: center;
+      padding-left: 26px;
+      margin-bottom: 10px;
+    }
+    .link .item img {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+  }
+  .link {
+    padding-bottom: 35px;
+  }
+  .clients h2 {
+    font-weight: 250px;
+    font-size: 27px;
+  }
+  .clients .client {
+    margin-top: 25px;
+    /* display: block; */
+  }
+  .clients .item{
+    width: 32%;
+  }
+  .clients .item img {
+    height:auto;
+  }
+  .clients .item .first {
+    margin-top: 18px;
+}
+.clients .item h6 {
+  font-weight: 400;
+  font-size: 15px;
+}
+.clients .item p {
+  font-weight: 300;
+  font-size: 12px;
+}
+.clients .item .tel li img {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+.clients .item:first-child .first .tel li:first-child{
+  margin-top: 50px;
+}
+.clients .item:first-child .second .tel li:first-child{
+  margin-top: 50px;
+}
+.clients .item .tel li span {
+  font-weight: 400;
+  font-size: 9px;
+}
+.clients {
+  padding-bottom: 60px;
+}
+.accordion-content {
+  p {
+      margin-top: 27px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 19px;}
+    }
+  }
+
+  @media (max-width: 580px) {
+    .banner img {
+      height: 155px;
+      border-top-right-radius: 9px;
+  }
+  .banner .txt h1 {
+    font-weight: 250;
+    font-size: 25px;
+}
+.banner .txt p {
+  margin-top: 0px;
+  font-weight: 300;
+  font-size: 12px;
+}
+.descrip > .left {
+  width: 34%;
+  height: fit-content;
+  margin-left: 2px;
+  padding: 4px 1px;
+  border-radius: 12px;
+}
+.descrip .right {
+  width: 61%;
+}
+.descrip > .left .parrent > li {
+  margin-top: 11px;
+  padding-bottom: 17px;}
+  .descrip > .left .child li {
+    cursor: pointer;
+    padding: 3px 0px;
+}
+.descrip > .left .parrent > li  a{
+  font-size: 12px;
+}
+.descrip .right .img-list{
+  display: block;
+}
+.showing .btn-icon img {
+  width: 17px;
+  height: 17px;
+}
+.profile h2 {
+  font-size: 20px;
+}
+.profile .items {
+  display: block;
+  margin-top: 38px;
+}
+.profile .item {
+  width: auto;
+  margin-bottom: 15px;
+}
+.profile .item img {
+  height: auto;
+}
+.profile {
+  padding-bottom: 34px;
+}
+.link-rainbow {
+  position: absolute;
+  right: 0;
+  top: -60px;
+  width: 209px;
+  height: 346px;
+}
+.clients .client {
+      margin-top: 25px;
+      display: block;
+    }
+    .clients .item{
+      width: auto;
+    }
+    .clients .item img {
+      height:auto;
+    }
+    .descrip{
+      display: block;
+    }
+    .descrip > .left {
+      width: 98%;
+      height: fit-content;
+      margin-left: 3px;
+      padding: 10px 34px;
+      border-radius: 12px;
+      margin-bottom: 38px;
+  }
+  .descrip .right {
+    width: 99%;
+}
+.descrip .right .right-img img{
+  margin-top: 20px;
+}
+.descrip .right .img-list .left-list{
+  margin-top: 30px;
+}
+  }
+
+    
