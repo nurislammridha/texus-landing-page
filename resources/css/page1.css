@@ -124,6 +124,8 @@ font-weight: 500;
   width: 421px;
   height: 504px;
   transition:.3s ease;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 .descrip .right .right-img img:hover{
   transform: scale(1.02) translateY(-0.3rem);
@@ -575,10 +577,13 @@ margin-top: 75px;
     }
   }
 
-  @media (max-width: 580px) {
+  @media (max-width: 767px) {
+    .banner {
+      padding-top: 43px;
+    }
     .banner img {
-      height: 155px;
-      border-top-right-radius: 9px;
+      height: 200px;
+      border-top-right-radius: 0px;
   }
   .banner .txt h1 {
     font-weight: 250;
@@ -588,6 +593,9 @@ margin-top: 75px;
   margin-top: 0px;
   font-weight: 300;
   font-size: 12px;
+}
+.descrip {
+  padding: 31px 15px;
 }
 .descrip > .left {
   width: 34%;
@@ -599,6 +607,9 @@ margin-top: 75px;
 .descrip .right {
   width: 61%;
 }
+.descrip .right > p {
+  font-size: 15px;
+}
 .descrip > .left .parrent > li {
   margin-top: 11px;
   padding-bottom: 17px;}
@@ -607,10 +618,34 @@ margin-top: 75px;
     padding: 3px 0px;
 }
 .descrip > .left .parrent > li  a{
-  font-size: 12px;
+  font-size: 16px;
 }
 .descrip .right .img-list{
   display: block;
+}
+.descrip .right .img-list .left-list p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3C3C3C;
+  margin-bottom: 20px;
+  margin-top: 13px;
+}
+.descrip .right .img-list .left-list ul {
+  margin-top: 18px;
+}
+.descrip .right .img-list .left-list ul li {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3C3C3C;
+  margin-bottom: 10px;
+}
+.descrip .right .right-img img {
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 .showing .btn-icon img {
   width: 17px;
@@ -629,6 +664,7 @@ margin-top: 75px;
 }
 .profile .item img {
   height: auto;
+  margin-top: 20px;
 }
 .profile {
   padding-bottom: 34px;
@@ -640,12 +676,39 @@ margin-top: 75px;
   width: 209px;
   height: 346px;
 }
+.para-parent {
+  padding: 0px 15px;
+}
+.para h6 {
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+.para p {
+  margin-top: 25px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+}
+.showing {
+  padding: 33px 15px;
+}
+.showing h1 {
+  font-weight: 200;
+  font-size: 30px;
+  color: #141515;
+  margin-bottom: 26px;
+  margin-top: 20px;
+  text-align: center;
+}
 .clients .client {
       margin-top: 25px;
       display: block;
     }
     .clients .item{
       width: auto;
+      margin-top: 20px;
     }
     .clients .item img {
       height:auto;
@@ -666,10 +729,80 @@ margin-top: 75px;
 }
 .descrip .right .right-img img{
   margin-top: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 .descrip .right .img-list .left-list{
   margin-top: 30px;
 }
+
+.profile{
+  padding:34px 15px
+}
+.profile h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.profile .item .title {
+  text-align: center;
+}
+.profile .item .more {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.clients h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.clients{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.clients .item h6{
+font-weight: 400;
+font-size: 22px;
+text-align: center;
+  }
+  .clients .item p {
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
   }
 
-    
+  .clients .item .tel li span {
+    font-weight: 400;
+    font-size: 15px;}
+    .clients .item .tel li img {
+      width: 20px;
+      height: 20px;
+      margin-right: 6px;
+  }
+
+  .clients .item .tel li {
+    margin-bottom: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
