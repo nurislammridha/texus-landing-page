@@ -1,5 +1,5 @@
 # Texus Landing Pages Design
-
+two pages=> /page1.html
 This is simple landing page design with html-5,only css-3 and Javascript.
 
 # Project setup instruction:
